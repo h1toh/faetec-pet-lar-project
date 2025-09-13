@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(245, 241, 241);
+    overflow-x: hidden;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.guia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 208, 216);
+    height: 64px;
+    width: 1400px;
+    border-radius: 9px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-img {
+    height: 100px;
+}
+
+input {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(228, 105, 146);
+    color: white;
+}
+
+.loginBtn {
+    height: 40px;
+    width: 135px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 140px;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 94px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
+.comofuncexemplos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgEncontre img,
+.imgConverse img,
+.imgAdote img {
+    height: 80px;
+}
+
+.encontreDesc,
+.converseDesc,
+.adoteDesc {
+    width: 175px;
+}
+
+.encontreDesc p,
+.converseDesc p,
+.adoteDesc p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.comofunc {
+    display: flex;
+    align-items: center;
+    background-color: rgb(112, 84, 84);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 650px;
+    height: 30px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 700px;
+}
+
+.ex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 14px;
+    width: auto;
+    padding: 0 10px;
+    height: 35px;
+}
+
+.logo {
+    z-index: -1;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-home {
+    height: 700px;
+}
+
+aside .img-home {
+    position: absolute;
+    z-index: -1;
+    margin-left: 650px;
+    margin-top: -100px;
+}
+
+.footer {
+    height: 200px;
+    margin-top: -100px;
+    background: url(./images/footer.png) 0 50px no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fdf0e0;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 400px;
+}
+
+.mostrarMais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 241, 241);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.btnMostrarMais {
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    border-radius: 7px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
