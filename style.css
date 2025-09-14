@@ -218,3 +218,91 @@ aside .img-home {
     justify-content: center;
     align-items: center;
 }
+
+.sobreDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf0e0;
+    padding: 15px;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 600px;
+    height: 250px;
+}
+
+.sobreDesc p{
+    font-size: 25px;
+    padding: 15px;
+}
+
+.amorResp{
+    display: flex;
+    gap: 20px;
+}
+
+.amor, .responsabilidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(228, 105, 146);
+    padding: 30px 60px;
+    height: 20px;
+    border-radius: 12px;
+    font-size: 25px;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.amor img, .responsabilidade img{
+    height: 35px;
+}
+
+.sobreContainer, .sobreDesc-left, .sobreDesc-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreContainer{
+    gap: 40px;
+}
+
+.sobreContainer h1{
+    margin-top: -50px;
+    font-size: 90px;
+}
+
+.sobreDesc-left{
+    gap: 20px;
+}
+
+.sobreDesc-right{
+    gap: 20px;
+}
+
+.sobreCont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.descImgSobre{
+    width: 350px;
+}
+
+.descImgSobre p{
+    font-size: 22px;
+}
+
+.sobreDesc-right img{
+    height: 400px;
+    margin-top: -100px;
+    z-index: -1;
+}
+
+.tituloSobre{
+    margin-left:-450px;
+}
