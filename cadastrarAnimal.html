@@ -32,11 +32,122 @@
 
     </header>
 
-    <main>
+    <main class="cadastro">
 
-        <aside>
-            <img class="img-adotar" src="" alt="">
+        <aside class="anuncios">
+            <img class="img-" src="./images/anuncio_1.jpg" alt="">
+            <img class="img-" src="./images/anuncio_2.jpg" alt="">
         </aside>
+
+        <div class="backgroundCadastrar">
+            <div class="cadastrarAnimalTitulo">
+                <h2>Cadastrar Animal</h2>
+            </div>
+
+            <div class="cadastro-top">
+
+                <div class="picture-background">
+                    <img src="./images/camera.png" alt="">
+                    <p>Enviar foto</p>
+                </div>
+
+                <form class="infoBasica">
+
+                    <h3>Informações Básicas</h3>
+
+                    <input class="nomeAnimal" type="text" placeholder="Nome do animal">
+                    <div class="infoBasica-grid">
+                        <select>
+                            <option disabled selected>Espécie</option>
+                            <option>Cachorro</option>
+                            <option>Gato</option>
+                            <option>Hamster</option>
+
+                        </select>
+                        <input class="detalhes" type="text" placeholder="Raça">
+                        <select>
+                            <option disabled selected>Sexo</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+                        <input class="detalhes" type="text" placeholder="Idade">
+                    </div>
+                </form>
+
+                <div class="contato">
+                    <h3>Responsável</h3>
+                    <input class="nomeAnimal" type="text" placeholder="Nome da ONG ou Protetor">
+                    <input class="nomeAnimal" type="text" placeholder="Contato">
+                </div>
+
+            </div>
+
+            <div class="cadastro-mid">
+
+                <form class="infoBasica">
+
+                    <h3>Localização</h3>
+
+                    <select>
+                        <option disabled selected>Estado</option>
+                        <option>Rio de Janeiro</option>
+                    </select>
+
+                    <select>
+                        <option disabled selected>Cidade</option>
+                        <option>Nova Iguaçu</option>
+                    </select>
+                </form>
+
+                <div class="saude">
+                    <h3>Saúde e Comportamento</h3>
+                    <div class="vacinado">
+                        <p>Está vacinado?</p>
+
+                        <input type="radio" name="vacinado">
+                        <p>Sim</p>
+
+                        <input type="radio" name="vacinado">
+                        <p>Não</p>
+                    </div>
+                    <div class="castrado">
+                        <p>Está castrado?</p>
+
+                        <input type="radio" name="castrado">
+                        <p>Sim</p>
+
+                        <input type="radio" name="castrado">
+                        <p>Não</p>
+                    </div>
+                    <div class="convive">
+                        <p>Convive com outros animais?</p>
+                        <form class="infoBasica">
+                            <select>
+                                <option disabled selected>Temperamento</option>
+                                <option>-------</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="necessidade">
+                    <p>Possui alguma necessidade especial?</p>
+                    <input class="nomeAnimal" type="text">
+                    <p>História do animal (opcional)</p>
+                    <input class="nomeAnimal" type="text">
+                </div>
+
+            </div>
+
+            <div class="cadastro-bottom">
+                <div class="btnCancelar">
+                    <p>Cancelar</p>
+                </div>
+                <div class="btnSalvar">
+                    <p>Salvar</p>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
