@@ -160,21 +160,83 @@ aside .img-home {
 .footer {
     height: 200px;
     margin-top: -100px;
-    background: url(./images/footer.png) 0 50px no-repeat;
+    background: url(./images/footer.png) 0 50px repeat-x;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 370px 370px 370px;
+    gap: 30px;
 }
 
 .card {
+    display: grid;
+    grid-template-columns: 225px 225px;
+    gap: 20px;
     background-color: #fdf0e0;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
-    width: 400px;
+    width: 340px;
+    height: 210px;
+}
+
+.card-left div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -30px;
+    font-size: 18px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-info h2 {
+    font-size: 25px;
+}
+
+.imgAnimal {
+    width: 180px;
+}
+
+
+.card-info {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -50px;
+    gap: 15px;
+    width: 60%;
+}
+
+.card-info p{
+    width: 100%;
+}
+
+.card-right {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.imgCard {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.imgCard img {
+    height: 40px;
 }
 
 .mostrarMais {
@@ -193,31 +255,6 @@ aside .img-home {
     border-radius: 7px;
 }
 
-.card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 20px;
-}
-
-.localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .sobreDesc {
     display: flex;
@@ -452,7 +489,7 @@ input[type="radio"] {
 
 .anuncios {
     position: absolute;
-    margin-left: 1280px;
+    margin-left: 1480px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -460,7 +497,7 @@ input[type="radio"] {
 
 .anuncios img {
     height: auto;
-    width: 240px;
+    width: 260px;
     cursor: pointer;
 }
 
@@ -598,7 +635,7 @@ input[type="radio"] {
     border-radius: 7px;
 }
 
-.cadastrarOng button{
+.cadastrarOng button {
     margin-top: 40px;
     font-size: 20px;
     background-color: rgb(187, 187, 187);
@@ -607,4 +644,17 @@ input[type="radio"] {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+}
+
+.adotarMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input[type='button']{
+    transition: 0.2s ease-in-out;
+}
+button:hover, input[type='button']:hover{
+    transform: scale(1.1, 1.1);
 }
