@@ -216,7 +216,7 @@ aside .img-home {
     width: 60%;
 }
 
-.card-info p{
+.card-info p {
     width: 100%;
 }
 
@@ -489,7 +489,7 @@ input[type="radio"] {
 
 .anuncios {
     position: absolute;
-    margin-left: 1480px;
+    margin-left: 1300px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -646,15 +646,20 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.adotarMain{
+.adotarMain {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button, input[type='button']{
+button,
+input[type='button'],
+.ex {
     transition: 0.2s ease-in-out;
 }
-button:hover, input[type='button']:hover{
+
+button:hover,
+input[type='button']:hover,
+.ex:hover {
     transform: scale(1.1, 1.1);
 }
