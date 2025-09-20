@@ -46,9 +46,11 @@
 
             <div class="cadastro-top">
 
-                <div class="picture-background">
-                    <img src="./images/camera.png" alt="">
-                    <p>Enviar foto</p>
+                <div title="Clique aqui para enviar uma foto" id="picture-background" class="picture-background">
+                    <img id="camera" src="./images/camera.png" alt="">
+                    <p id="textoImg">Enviar foto</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <div id="preview"></div>
                 </div>
 
                 <form class="infoBasica">

@@ -2,6 +2,31 @@ const cidadesDoRioDeJaneiro = ["Angra dos Reis", "Aperibé", "Araruama", "Areal"
 const especiesParaDoacao = ["Cachorro", "Gato", "Jabuti", "Peixe", "Hamster", "Coelho"]
 const selectCidades = document.getElementById('cidades')
 const selectEspecie = document.getElementById('especies')
+const uploadDiv = document.getElementById('picture-background')
+const fileInput = document.getElementById('fileInput')
+const preview = document.getElementById('preview')
+const camera = document.getElementById('camera')
+const textoImg = document.getElementById('textoImg')
+
+uploadDiv.addEventListener("click", () => {
+    fileInput.click()
+})
+
+fileInput.addEventListener("change", ()=>{
+    const file = fileInput.files[0]
+    if(file){
+        const reader = new FileReader()
+        reader.onload = (e)=>{
+            const img= document.createElement('img')
+            img.src = e.target.result
+            preview.innerHTML = ""
+            camera.style.display = 'none'
+            textoImg.style.display = 'none'
+            preview.appendChild(img)
+        }
+        reader.readAsDataURL(file)
+    }
+})
 
 
 cidadesDoRioDeJaneiro.forEach(cidade => {
