@@ -4,6 +4,21 @@
     font-family: sans-serif;
 }
 
+@font-face{
+    font-family: 'Austaly';
+    src: url("./fonts/Austaly.otf") format('opentype');
+}
+
+@font-face{
+    font-family: 'DailyNote';
+    src: url("./fonts/DailyNote.otf") format('opentype');
+}
+
+@font-face{
+    font-family: 'Corbel';
+    src: url("./fonts/corbel.TTF") format('truetype');
+}
+
 body {
     background-color: rgb(245, 241, 241);
     overflow-x: hidden;
