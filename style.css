@@ -801,6 +801,22 @@ h3 {
     font-size: 18px;
 }
 
+.enc {
+    opacity: 0;
+    animation: aparecerTexto 1s forwards;
+    animation-delay: 4s;
+}
+.con{
+    opacity: 0;
+    animation: aparecerTexto 1s forwards;
+    animation-delay: 5s;
+}
+.ado{
+    opacity: 0;
+    animation: aparecerTexto 1s forwards;
+    animation-delay: 6s;
+}
+
 @media(max-width: 800px) {
 
     .bar {
@@ -986,7 +1002,7 @@ h3 {
     }
 
     .textoInicio h1 {
-        font-size: 50px
+        font-size: 40px
     }
 
     .textoInicio {
@@ -1024,7 +1040,7 @@ h3 {
     .imgEncontre img,
     .imgConverse img,
     .imgAdote img {
-        height: 60px;
+        height: 55px;
     }
 
     .encontreDesc,
@@ -1052,9 +1068,14 @@ h3 {
         }
 
         100% {
-            width: 350px;
+            width: 310px;
             opacity: 1;
         }
+    }
+
+    .footer {
+        height: 200px;
+        margin-top: -200px;
     }
 
 }
