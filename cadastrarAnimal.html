@@ -28,28 +28,24 @@
                     <a href="./cadastrarAnimal.html">CADASTRAR ANIMAL</a>
                     <a href="./ongs.html">ONGS PARCEIRAS</a>
                     <a href="./sobre.html">SOBRE</a>
-                    <a href="">CONECTAR</a>
-                </nav>
+                    <a onclick="emBreve()" href="">CONECTAR</a>
+                    </nav>
+                </div>
             </div>
-        </div>
 
 
-        <nav class="guia">
-            <a href="./index.html">ÍNICIO</a>
-            <a href="./adotar.html">ADOTAR</a>
-            <a class="page-selected" href="./cadastrarAnimal.html">CADASTRAR ANIMAL</a>
-            <a href="./ongs.html">ONGS PARCEIRAS</a>
-            <a href="./sobre.html">SOBRE</a>
-            <input class="loginBtn" type="button" value="CONECTAR">
-        </nav>
+            <nav class="guia">
+                <a href="./index.html">ÍNICIO</a>
+                <a href="./adotar.html">ADOTAR</a>
+                <a class="page-selected" href="./cadastrarAnimal.html">CADASTRAR ANIMAL</a>
+                <a href="./ongs.html">ONGS PARCEIRAS</a>
+                <a href="./sobre.html">SOBRE</a>
+                <input onclick="emBreve()" class="loginBtn" type="button" value="CONECTAR">
+            </nav>
     </header>
 
     <main class="cadastro">
 
-        <aside class="anuncios">
-            <img class="img-" src="./images/anuncio_1.jpg" alt="">
-            <img class="img-" src="./images/anuncio_2.jpg" alt="">
-        </aside>
 
         <div class="backgroundCadastrar">
             <div class="cadastrarAnimalTitulo">
@@ -99,7 +95,7 @@
 
                     <h3>Localização</h3>
 
-                    <select>
+                    <select id="estados">
                         <option disabled selected>Estado</option>
                         <option>Rio de Janeiro</option>
                     </select>
@@ -130,7 +126,7 @@
                         <p>Não</p>
                     </div>
                     <div class="convive">
-                        <p>Convive com outros animais?</p>
+                        <p>Convivio com outros animais</p>
                         <form class="infoBasica">
                             <select id="temperamento">
                                 <option disabled selected>Temperamento</option>
@@ -140,9 +136,9 @@
                 </div>
                 <div class="necessidade">
                     <h3>Possui alguma necessidade especial?</p>
-                        <input class="nomeAnimal" type="text">
-                        <h3>História do animal (opcional)</p>
-                            <input class="nomeAnimal" type="text">
+                    <input class="nomeAnimal" type="text">
+                    <h3>História do animal (opcional)</p>
+                    <input class="nomeAnimal" type="text">
                 </div>
 
             </div>
@@ -151,7 +147,7 @@
                 <div class="btnCancelar">
                     <p>Cancelar</p>
                 </div>
-                <div id="btnClicavel" class="btnSalvar">
+                <div onclick="emBreve()" id="btnClicavel" class="btnSalvar">
                     <p>Salvar</p>
                 </div>
             </div>

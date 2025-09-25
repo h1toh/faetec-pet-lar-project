@@ -76,3 +76,7 @@ temperamentosDoAnimal.forEach(temperamento => {
     optionTemperamento.textContent = temperamento
     selectTemperamento.appendChild(optionTemperamento)
 })
+
+function emBreve(){
+    alert('Esta funcionalidade estará disponível em breve!')
+}
