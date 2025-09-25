@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+.bar {
+    display: none;
+}
+
 p {
     font-family: 'Corbel';
 }
@@ -11,6 +15,7 @@ p {
 .blt {
     display: none;
 }
+
 
 @font-face {
     font-family: 'Austaly';
@@ -797,6 +802,43 @@ h3 {
 }
 
 @media(max-width: 800px) {
+
+    .bar {
+        background-color: #f2f2f2;
+        position: absolute;
+        margin-left: -260px;
+        display: none;
+        flex-direction: column;
+        width: 300px;
+        height: 410px;
+        border: 1px solid black;
+        z-index: 1;
+    }
+
+    .guiaBar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #74513e;
+        font-size: 24px;
+        font-family: 'DailyNote';
+        height: 30px;
+    }
+
+    .guiaBar a:hover {
+        text-decoration: underline;
+    }
+
+    .guiaBar {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
     .guia {
         display: none;
     }

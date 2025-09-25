@@ -14,9 +14,25 @@ const camera = document.getElementById('camera')
 const textoImg = document.getElementById('textoImg')
 const outroTemperamento = document.getElementById('outroTemperamento')
 
+const bar = document.querySelector('.bar')
+const main = document.querySelector('main')
+const btnBar = document.getElementById('btnBar')
 
-const btnClicavel = document.getElementById('btnClicavel').addEventListener('click',()=>{
-            alert('Disponível em breve!')
+let barAtivada = false
+
+btnBar.addEventListener('click', () => {
+    if (!barAtivada) {
+        barAtivada = true
+        bar.style.display = 'flex'
+    } else if (barAtivada) {
+        barAtivada = false
+        bar.style.display = 'none'
+    }
+})
+
+main.addEventListener('click', () => {
+    barAtivada = false
+    bar.style.display = 'none'
 })
 
 uploadDiv.addEventListener("click", () => {
