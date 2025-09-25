@@ -4,23 +4,27 @@
     font-family: sans-serif;
 }
 
-@font-face{
+p {
+    font-family: 'Corbel';
+}
+
+@font-face {
     font-family: 'Austaly';
     src: url("./fonts/Austaly.otf") format('opentype');
 }
 
-@font-face{
+@font-face {
     font-family: 'DailyNote';
     src: url("./fonts/DailyNote.otf") format('opentype');
 }
 
-@font-face{
+@font-face {
     font-family: 'Corbel';
     src: url("./fonts/corbel.TTF") format('truetype');
 }
 
 body {
-    background-color: rgb(245, 241, 241);
+    background-color: #f2f2f2;
     overflow-x: hidden;
 }
 
@@ -37,9 +41,9 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #74513e;
     font-size: 20px;
-
+    font-family: 'DailyNote';
 }
 
 .cabecalho {
@@ -53,7 +57,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 208, 216);
+    background-color: #f4d1cd;
     height: 64px;
     width: 1400px;
     border-radius: 9px;
@@ -67,7 +71,7 @@ nav a {
 input {
     border: none;
     cursor: pointer;
-    background-color: rgb(228, 105, 146);
+    background-color: #c26a82;
     color: white;
 }
 
@@ -76,6 +80,7 @@ input {
     width: 135px;
     border-radius: 10px;
     font-size: 20px;
+    font-family: 'DailyNote';
 }
 
 main {
@@ -87,8 +92,13 @@ main {
 
 h1 {
     font-size: 94px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Austaly";
     font-weight: 400;
+}
+
+.comofunc p {
+    font-family: 'DailyNote';
+    font-size: 24px;
 }
 
 .comofuncexemplos {
@@ -119,7 +129,7 @@ h1 {
 .comofunc {
     display: flex;
     align-items: center;
-    background-color: rgb(112, 84, 84);
+    background-color: #735138;
     color: white;
     padding: 11px 22px;
     border-radius: 10px;
@@ -190,12 +200,13 @@ aside .img-home {
     display: grid;
     grid-template-columns: 225px 225px;
     gap: 20px;
-    background-color: #fdf0e0;
+    background-color: #f3ead9;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     width: 340px;
     height: 210px;
+    cursor: pointer;
 }
 
 .card-left div {
@@ -262,6 +273,7 @@ aside .img-home {
     background-color: rgb(245, 241, 241);
     box-shadow: none;
     border-radius: 0;
+    cursor: default;
 }
 
 .btnMostrarMais {
@@ -300,12 +312,18 @@ aside .img-home {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: rgb(228, 105, 146);
+    background-color: #c26a82;
     padding: 30px 60px;
     height: 20px;
     border-radius: 12px;
     font-size: 25px;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.amor p,
+.responsabilidade p {
+    font-family: "DailyNote";
+    font-size: 20px;
 }
 
 .amor img,
@@ -328,6 +346,7 @@ aside .img-home {
 
 .sobreContainer h1 {
     margin-top: -50px;
+    margin-left: -50px;
     font-size: 90px;
 }
 
@@ -383,7 +402,7 @@ aside .img-home {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(240, 169, 181);
+    background-color: #f4d1cd;
     height: 180px;
     width: 200px;
     border-radius: 26px;
@@ -489,7 +508,7 @@ input[type="radio"] {
 .cadastrarAnimalTitulo {
     display: flex;
     justify-content: center;
-    background-color: rgb(240, 169, 181);
+    background-color: #f4d1cd;
     width: 800px;
     height: 400px;
     position: absolute;
@@ -542,6 +561,7 @@ input[type="radio"] {
     color: white;
     background-color: rgb(170, 170, 170);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btnSalvar {
@@ -551,8 +571,9 @@ input[type="radio"] {
     width: 100px;
     height: 30px;
     color: white;
-    background-color: rgb(202, 104, 104);
+    background-color: #c06a83;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .backgroundOngs {
@@ -561,7 +582,7 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fdf0e0;
+    background-color: #f3ead9;
     padding: 15px;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 80px;
@@ -581,7 +602,7 @@ input[type="radio"] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #f8bcbc;
+    background-color: #f4d1cd;
     padding: 20px;
     border-radius: 60px;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
@@ -667,12 +688,14 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -100px;
 }
 
 button,
 input[type='button'],
 .ex,
-.sobreAnim {
+.sobreAnim,
+.card{
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -680,8 +703,16 @@ input[type='button'],
 button:hover,
 input[type='button']:hover,
 .ex:hover,
-.sobreAnim:hover {
+.sobreAnim:hover{
     transform: scale(1.1, 1.1);
+}
+
+.card:hover{
+    box-shadow: 0px 6px 8px rgba(255, 0, 0, 0.253);
+}
+
+.mostrarMais:hover{
+    box-shadow: none;
 }
 
 .comofunc {
@@ -728,8 +759,28 @@ input[type='button']:hover,
     border-radius: 26px;
 }
 
-.textoInicio h1{
+.textoInicio h1 {
     opacity: 0;
-    animation: aparecerTexto 2s forwards;
+    animation: aparecerTexto 1s forwards;
     animation-delay: 1s;
+}
+
+.card-info h2 {
+    font-family: "DailyNote";
+    font-weight: 100;
+}
+
+.card-info p {
+    font-family: "Corbel";
+    font-size: 18px;
+}
+
+.cadastrarAnimalTitulo h2 {
+    font-family: 'DailyNote';
+    font-weight: 100;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 18px;
 }
