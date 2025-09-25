@@ -789,7 +789,7 @@ h3 {
     font-size: 18px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 800px) {
     .guia {
         display: none;
     }
@@ -929,7 +929,7 @@ h3 {
     }
 }
 
-@media(min-width: 769px) and (max-width: 1000px) {
+@media(min-width: 801px) and (max-width: 1300px) {
     .guia {
         display: flex;
         align-items: center;
@@ -986,7 +986,14 @@ h3 {
     .container {
         display: grid;
         justify-content: center;
-        grid-template-columns: 370px 0px 0px;
+        grid-template-columns: 370px 370px;
         gap: 30px;
+    }
+
+    .sobreCont2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
