@@ -809,7 +809,7 @@ h3 {
         width: 340px;
     }
 
-    .sobreContainer{
+    .sobreContainer {
         width: 100%;
     }
 
@@ -861,7 +861,132 @@ h3 {
         font-size: 20px;
     }
 
-    .acao{
+    .acao {
         font-size: 20px;
+    }
+
+    .bottomOng,
+    .topOng {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .backgroundOngs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f3ead9;
+        padding: 15px;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 80px;
+        width: 400px;
+        height: 80%;
+        gap: 30px;
+    }
+
+    .anuncios {
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 1560px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .anuncios img {
+        height: auto;
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .ongpage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cadastrarOng button {
+        margin-top: 40px;
+        font-size: 15px;
+        background-color: rgb(187, 187, 187);
+        color: black;
+        padding: 6px 5px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 370px;
+        gap: 30px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1000px) {
+    .guia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4d1cd;
+        height: 64px;
+        width: 700px;
+        border-radius: 9px;
+        box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #74513e;
+        font-size: 16px;
+        font-family: 'DailyNote';
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .loginBtn {
+        height: 40px;
+        width: 105px;
+        border-radius: 10px;
+        font-size: 17px;
+        font-family: 'DailyNote';
+    }
+
+    .anuncios {
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 960px;
+        display: flex;
+        flex-direction: row;
+        gap: 600px;
+    }
+
+    .anuncios img {
+        height: auto;
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 370px 0px 0px;
+        gap: 30px;
     }
 }
