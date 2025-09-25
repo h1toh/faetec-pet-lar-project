@@ -177,14 +177,21 @@ h1 {
 }
 
 .img-home {
-    height: 700px;
+    width: 800px;
+}
+
+.mainHome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 aside .img-home {
     position: absolute;
     z-index: -1;
-    margin-left: 650px;
-    margin-top: -100px;
+    margin-left: 60px;
+    margin-top: -700px;
+    opacity: 0.6;
 }
 
 .footer {
@@ -927,6 +934,87 @@ h3 {
         grid-template-columns: 370px;
         gap: 30px;
     }
+
+    aside .img-home {
+        position: static;
+        z-index: 0;
+        margin-left: 0px;
+        margin-top: 0px;
+        display: none;
+    }
+
+    .textoInicio h1 {
+        font-size: 50px
+    }
+
+    .textoInicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
+
+    .desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comofunc {
+        display: flex;
+        align-items: center;
+        background-color: #735138;
+        color: white;
+        padding: 11px 22px;
+        border-radius: 10px;
+        font-size: 18px;
+        height: 30px;
+        width: 0;
+        opacity: 0;
+    }
+
+    .mainHome {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .imgEncontre img,
+    .imgConverse img,
+    .imgAdote img {
+        height: 60px;
+    }
+
+    .encontreDesc,
+    .converseDesc,
+    .adoteDesc {
+        width: 105px;
+    }
+
+    .encontreDesc p,
+    .converseDesc p,
+    .adoteDesc p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    @keyframes aparecerDiv {
+        0% {
+            width: 0;
+            opacity: 0;
+
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            width: 350px;
+            opacity: 1;
+        }
+    }
+
 }
 
 @media(min-width: 801px) and (max-width: 1300px) {
@@ -995,5 +1083,26 @@ h3 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    aside .img-home {
+        position: static;
+        z-index: 0;
+        margin-left: 0px;
+        margin-top: 0px;
+        display: none;
+    }
+
+    .textoInicio h1 {
+        font-size: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
