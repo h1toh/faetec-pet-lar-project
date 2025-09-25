@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,21 +15,19 @@
 <body>
     <header class="cabecalho">
 
-        <div class="logo">
-            <a href="/index.html">
-                <img class="logo-img" src="./images/logo.png" alt="">
-            </a>
-        </div>
+        <a href="/index.html">
+            <img class="logo-img" src="./images/logo.png" alt="">
+        </a>
+        <img id="opapa" class="blt" src="./images/barraLateral.png" alt="">
 
         <nav class="guia">
             <a href="./index.html">ÍNICIO</a>
             <a href="./adotar.html">ADOTAR</a>
-            <a href="./cadastrarAnimal.html">CADASTRAR ANIMAL</a>
+            <a class="page-selected" href="./cadastrarAnimal.html">CADASTRAR ANIMAL</a>
             <a href="./ongs.html">ONGS PARCEIRAS</a>
-            <a class="page-selected" href="./sobre.html">SOBRE</a>
+            <a href="./sobre.html">SOBRE</a>
             <input class="loginBtn" type="button" value="CONECTAR">
         </nav>
-
     </header>
 
     <main>
@@ -63,14 +61,14 @@
                 <div class="sobreDesc-right">
                     <img src="./images/image-sobre.png" alt="">
                     <div class="descImgSobre">
-                        <p>Criamos laços com empatia e compromisso para transformar vidas - 
-                        humanas e animais.</p>
+                        <p>Criamos laços com empatia e compromisso para transformar vidas -
+                            humanas e animais.</p>
                     </div>
                 </div>
 
             </div>
 
-            <h2>Cada adoção é um recomeço, junte-se a nós nessa missão.</h2>
+            <h2 class="acao">Cada adoção é um recomeço, junte-se a nós nessa missão.</h2>
 
         </div>
 

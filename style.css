@@ -8,6 +8,10 @@ p {
     font-family: 'Corbel';
 }
 
+.blt {
+    display: none;
+}
+
 @font-face {
     font-family: 'Austaly';
     src: url("./fonts/Austaly.otf") format('opentype');
@@ -375,7 +379,7 @@ aside .img-home {
 
 .sobreDesc-right img {
     height: 400px;
-    margin-top: -100px;
+    margin-top: 0px;
     z-index: -1;
 }
 
@@ -695,7 +699,7 @@ button,
 input[type='button'],
 .ex,
 .sobreAnim,
-.card{
+.card {
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -703,15 +707,15 @@ input[type='button'],
 button:hover,
 input[type='button']:hover,
 .ex:hover,
-.sobreAnim:hover{
+.sobreAnim:hover {
     transform: scale(1.1, 1.1);
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0px 6px 8px rgba(255, 0, 0, 0.253);
 }
 
-.mostrarMais:hover{
+.mostrarMais:hover {
     box-shadow: none;
 }
 
@@ -783,4 +787,81 @@ input[type='button']:hover,
 h3 {
     font-weight: 100;
     font-size: 18px;
+}
+
+@media(max-width: 768px) {
+    .guia {
+        display: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .blt {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .tituloSobre {
+        width: 340px;
+    }
+
+    .sobreContainer{
+        width: 100%;
+    }
+
+    .sobreContainer h1 {
+        font-size: 55px;
+        margin-left: 20px;
+    }
+
+    .sobreCont2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sobreDesc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdf0e0;
+        padding: 15px;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .amor,
+    .responsabilidade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #c26a82;
+        padding: 20px 15px;
+        height: 20px;
+        border-radius: 12px;
+        font-size: 25px;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .amor img,
+    .responsabilidade img {
+        height: 25px;
+    }
+
+    .amor p,
+    .responsabilidade p {
+        font-size: 20px;
+    }
+
+    .acao{
+        font-size: 20px;
+    }
 }
